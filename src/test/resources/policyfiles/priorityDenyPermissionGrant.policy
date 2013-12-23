@@ -1,0 +1,9 @@
+priority "deny";
+
+grant {
+	permission java.util.PropertyPermission "java.home", "read";
+};
+
+grant {
+	permission java.lang.RuntimePermission "setSecurityManager";
+};
