@@ -1,0 +1,7 @@
+grant {
+	permission java.util.PropertyPermission "${test.java.home.property}", "${test.read.property}";
+};
+
+grant {
+	permission java.lang.RuntimePermission "setSecurityManager";
+};
