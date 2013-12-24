@@ -1,0 +1,13 @@
+priority "deny";
+
+deny {
+	permission java.io.FilePermission "src${/}test${/}resources${/}policyfiles${/}*", "read";
+};
+
+grant {
+	permission java.io.FilePermission "src${/}test${/}resources${/}policyfiles${/}partConflictSmallerGrantPriorityDeny.policy", "read";
+};
+
+grant {
+	permission java.lang.RuntimePermission "setSecurityManager";
+};
