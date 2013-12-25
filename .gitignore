@@ -8,3 +8,4 @@
 target/*
 
 !src/test/resources/ReadJavaHome.jar
+!src/test/resources/SignedByPermission.jar

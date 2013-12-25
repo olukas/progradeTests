@@ -1,0 +1,9 @@
+keystore "src/test/resources/testing.keystore";
+
+grant {
+	permission signedbypermission.MySignedByPermission "grant", signedBy "duke";
+};
+
+grant {
+	permission java.lang.RuntimePermission "setSecurityManager";
+};
