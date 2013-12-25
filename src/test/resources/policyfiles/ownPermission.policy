@@ -1,0 +1,7 @@
+grant {
+	permission net.sourceforge.prograde.progradetests.miscellaneous.MyOwnTestPermission "grant";
+};
+
+grant {
+	permission java.lang.RuntimePermission "setSecurityManager";
+};
