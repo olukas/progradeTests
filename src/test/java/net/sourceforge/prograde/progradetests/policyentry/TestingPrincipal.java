@@ -12,11 +12,10 @@ public class TestingPrincipal implements Principal {
 
     public TestingPrincipal(String name) throws Exception {
         this.name = name;
-    }      
-    
+    }
+
     @Override
     public String getName() {
         return name;
     }
-    
 }

@@ -11,12 +11,12 @@ import javax.security.auth.spi.LoginModule;
  * @author Ondrej Lukas
  */
 public class TestingLoginModule implements LoginModule {
-    
+
     private Subject subject;
 
     @Override
     public void initialize(Subject subject, CallbackHandler callbackHandler, Map<String, ?> sharedState, Map<String, ?> options) {
-        this.subject = subject;   
+        this.subject = subject;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class TestingLoginModule implements LoginModule {
     public boolean commit() throws LoginException {
         try {
             subject.getPrincipals().add(new TestingPrincipal("PrincipalA"));
-            subject.getPrincipals().add(new TestingPrincipal("PrincipalB"));            
+            subject.getPrincipals().add(new TestingPrincipal("PrincipalB"));
         } catch (Exception ex) {
             throw new LoginException("commit failed");
         }
@@ -42,8 +42,7 @@ public class TestingLoginModule implements LoginModule {
 
     @Override
     public boolean logout() throws LoginException {
-        subject=null;
+        subject = null;
         return true;
     }
-    
 }

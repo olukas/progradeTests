@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package net.sourceforge.prograde.progradetests.policyentry;
 
 import java.security.PrivilegedAction;
@@ -17,5 +13,4 @@ public class ReadJavaHomeAction implements PrivilegedAction {
         System.getProperty("java.home");
         return null;
     }
-    
 }
