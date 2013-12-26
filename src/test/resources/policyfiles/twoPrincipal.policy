@@ -1,0 +1,8 @@
+grant principal net.sourceforge.prograde.progradetests.policyentry.TestingPrincipal "PrincipalA", principal net.sourceforge.prograde.progradetests.policyentry.TestingPrincipal "PrincipalB" {
+	permission java.util.PropertyPermission "java.home", "read";
+};
+
+grant {
+	permission java.lang.RuntimePermission "setSecurityManager";
+	permission javax.security.auth.AuthPermission "doAsPrivileged";
+};
