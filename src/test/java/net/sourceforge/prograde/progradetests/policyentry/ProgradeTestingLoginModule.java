@@ -10,7 +10,7 @@ import javax.security.auth.spi.LoginModule;
  *
  * @author Ondrej Lukas
  */
-public class TestingLoginModule implements LoginModule {
+public class ProgradeTestingLoginModule implements LoginModule {
 
     private Subject subject;
 
@@ -27,8 +27,8 @@ public class TestingLoginModule implements LoginModule {
     @Override
     public boolean commit() throws LoginException {
         try {
-            subject.getPrincipals().add(new TestingPrincipal("PrincipalA"));
-            subject.getPrincipals().add(new TestingPrincipal("PrincipalB"));
+            subject.getPrincipals().add(new ProgradeTestingPrincipal("PrincipalA"));
+            subject.getPrincipals().add(new ProgradeTestingPrincipal("PrincipalB"));
         } catch (Exception ex) {
             throw new LoginException("commit failed");
         }

@@ -1,4 +1,4 @@
-grant principal net.sourceforge.prograde.progradetests.policyentry.TestingPrincipal "PrincipalA", principal net.sourceforge.prograde.progradetests.policyentry.TestingPrincipal "PrincipalB" {
+grant principal net.sourceforge.prograde.progradetests.policyentry.ProgradeTestingPrincipal "PrincipalA", principal net.sourceforge.prograde.progradetests.policyentry.ProgradeTestingPrincipal "PrincipalB" {
 	permission java.util.PropertyPermission "java.home", "read";
 };
 

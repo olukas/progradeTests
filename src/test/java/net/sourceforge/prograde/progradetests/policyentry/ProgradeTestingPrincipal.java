@@ -6,11 +6,11 @@ import java.security.Principal;
  *
  * @author Ondrej Lukas
  */
-public class TestingPrincipal implements Principal {
+public class ProgradeTestingPrincipal implements Principal {
 
     private String name;
 
-    public TestingPrincipal(String name) throws Exception {
+    public ProgradeTestingPrincipal(String name) throws Exception {
         this.name = name;
     }
 
