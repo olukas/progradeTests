@@ -4,7 +4,7 @@
 
     <groupId>net.sourceforge.pro-grade</groupId>
     <artifactId>progradeTests</artifactId>
-    <version>1.0</version>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
 
     <name>progradeTests</name>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>net.sourceforge.pro-grade</groupId>
             <artifactId>pro-grade</artifactId>
-            <version>1.1-SNAPSHOT</version>
+            <version>1.1.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
